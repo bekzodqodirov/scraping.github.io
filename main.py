@@ -44,8 +44,8 @@ def pre_market_gainers_benzinga():
 # this function sent 7 top gainers via telegram to saved massage
 def telegram_alarm():
     time_now = dt.datetime.utcnow().strftime("%Y-%m-%d  %H:%M")
-    api_id = 1960537
-    api_hash = "c2060fdf33493a023fcf6f681095b2f4"
+    api_id = telegram_api_id
+    api_hash = telegram_api_hash
 
     str1 = f"{time_now} \nToday's Gainers are: \n"
     count = 0
